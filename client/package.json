@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "proxy": "http://localhost:5000",
+  "homepage": "https://git.heroku.com/the-m-store.git",
   "private": true,
   "dependencies": {
     "@react-google-maps/api": "^2.1.1",
