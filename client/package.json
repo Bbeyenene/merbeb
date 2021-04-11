@@ -1,8 +1,8 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "https://git.heroku.com/the-m-store.git",
   "private": true,
+  "proxy": "http://localhost:5000",
   "engines": {
     "node": ">=10.0.0",
     "npm": ">=6.0.0"
