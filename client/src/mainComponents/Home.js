@@ -2,7 +2,7 @@ import React from "react";
 
 function Home() {
   return (
-    <div style={{ margin: "0 auto", width: "100vw", marginTop: "70px" }}>
+    <div style={{ margin: "0 auto", width: "100vw" }}>
       <div className="hero">
         <h1> Subscribe Now </h1>
         <p>
