@@ -34,7 +34,7 @@ function App() {
     <BrowserRouter>
       <div>
         <Navbar />
-        <main style={{ minHeight: "320px" }}>
+        <main style={{ minHeight: "320px"}}>
           <Route path="/seller/:id" component={SellerScreen}></Route>
           <Route path="/cart/:id?" component={CartScreen}></Route>
           <Route path="/product/:id" component={ProductScreen} exact></Route>
