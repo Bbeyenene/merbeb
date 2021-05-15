@@ -1,0 +1,113 @@
+.nav-container {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ebebeb;
+  /* background-color: #0e688f; */
+  position: sticky;
+  /* height: 100px; */
+}
+h2 {
+  height: 20px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.head1 {
+  color: rgb(255, 253, 253);
+  color: #ffffff;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #1111;
+  width: 100%;
+  height: 80px;
+}
+.nav-container h4 {
+  max-width: 430px;
+  font-size: 60px;
+  border-radius: 10%;
+  font-family: "Dancing Script", cursive;
+  margin: 0 auto;
+  margin-left: 30px;
+  color: #ffffff;
+}
+.nav-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+  font-family: "Dancing Script", cursive;
+  font-family: "Oswald", sans-serif;
+  font-family: "Patua One", cursive;
+  height: 60px;
+}
+.nav-list p {
+  margin-top: 0;
+}
+
+.nav-list{
+ background-color: #0e688f;
+ width: 100vw;
+} 
+.nav-list a{
+  font-size: 25px;
+  color: rgb(255, 253, 253);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+  border-top: 1px solid #ffffff;
+  justify-content: space-around;
+}
+.nav-list a:hover {
+  background-color: rgb(91, 165, 244);
+}
+
+.hero {
+  background: rgba(0, 0, 0, 0) url("./Nshtey-Roma.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+  width: 100%;
+  height: 600px;
+
+}
+
+.home-body {
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  width: 20%;
+  background-color: #b8ecf0;
+}
+.main {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.main section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 450px;
+  background-color: rgb(165, 186, 177);
+  padding: 0;
+  margin: 0 auto;
+}
+
+.div-1 {
+  width: 49.8%;
+  height: 99%;
+  background-color: rgb(249, 249, 249);
+  /* background-color: rgba(228, 206, 206, 0.3); */
+  /* background-blend-mode: darken; */
+  border: 3px solid grey;
+  margin:2px;
+  text-align: center;
+}
+.div-2 {
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  background-blend-mode: darken;
+}

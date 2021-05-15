@@ -21,14 +21,20 @@ import SellerRoute from "./components/SellerRoute";
 import SellerScreen from "./screens/SellerScreen";
 import SearchScreen from "./screens/SearchScreen";
 import MapScreen from "./screens/MapScreen";
+import HomeH from "./mainComponents/Home";
 import Navbar from "./screens/Navbar";
+import ChatRoom from "./socialComponents/ChatRoom";
+import Software from "./softwareComponents/Software"
+import Truck from "./truckComponets/Truck"
+import Career from "./careerComponets/Career"
+import Footer from "./screens/Footer"
 
 function App() {
   return (
     <BrowserRouter>
       <div className="grid-container">
         <Navbar />
-        <main>
+        <main style={{ marginTop: "42px 0 0 0" }}>
           <Route path="/seller/:id" component={SellerScreen}></Route>
           <Route path="/cart/:id?" component={CartScreen}></Route>
           <Route path="/product/:id" component={ProductScreen} exact></Route>
@@ -97,10 +103,14 @@ function App() {
             path="/orderlist/seller"
             component={OrderListScreen}
           ></SellerRoute>
-
-          <Route path="/" component={HomeScreen} exact></Route>
+          <Route path="/" component={HomeH} exact></Route>
+          <Route path="/home" component={HomeScreen} exact></Route>
+          <Route path="/chat" component={ChatRoom} exact></Route>{" "}
+          <Route path="/software" component={Software} exact></Route>{" "}
+          <Route path="/truck" component={Truck} exact></Route>{" "}
+          <Route path="/career" component={Career} exact></Route>
         </main>
-        <footer className="row center">Letina book store</footer>
+       <Footer />
       </div>
     </BrowserRouter>
   );

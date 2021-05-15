@@ -14,6 +14,7 @@ export default function SearchBox(props) {
           name="q"
           id="q"
           onChange={(e) => setName(e.target.value)}
+          placeholder="Search"
         ></input>
         <button className="primary" type="submit">
           <i className="fa fa-search"></i>

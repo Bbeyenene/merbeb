@@ -3,6 +3,7 @@ html {
   box-sizing: border-box;
 }
 body {
+  padding: 0;
   margin: 0;
   height: 100vh;
   font-size: 1.6rem;
@@ -23,7 +24,12 @@ body {
     "footer";
   grid-template-columns: 1fr;
   grid-template-rows: 5rem 1fr 5rem;
-  height: 100%;
+  height: 400%;
+  margin: 0 auto;
+  /* width: 100vw; */
+  padding: 0;
+  /* border: 10px solid rgb(0, 14, 121); */
+ 
 }
 header {
   grid-area: header;
@@ -36,10 +42,6 @@ header {
   justify-content: space-between;
 }
 
-main {
-  grid-area: main;
-  padding: 1rem;
-}
 footer {
   grid-area: footer;
   background-color: #3a3d41;
@@ -54,7 +56,6 @@ h2 {
   font-size: 1.6rem;
   padding: 1rem 0;
 }
-
 a {
   text-decoration: none;
 }
@@ -195,7 +196,7 @@ img.small {
 }
 img.medium {
   max-width: 29rem;
-  width: 100%;
+  height: 400px;
 }
 img.large {
   width: 100%;
@@ -374,4 +375,17 @@ img.large {
 }
 .pagination a.active {
   font-weight: bold;
+}
+
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #444;
+  color: #fff;
+  width: 100%;
+  border: 3px solid #000;
+  margin-bottom: 0;
+  height: 200px;
 }
