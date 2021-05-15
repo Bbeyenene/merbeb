@@ -24,17 +24,17 @@ import MapScreen from "./screens/MapScreen";
 import HomeH from "./mainComponents/Home";
 import Navbar from "./screens/Navbar";
 import ChatRoom from "./socialComponents/ChatRoom";
-import Software from "./softwareComponents/Software"
-import Truck from "./truckComponets/Truck"
-import Career from "./careerComponets/Career"
-import Footer from "./screens/Footer"
+import Software from "./softwareComponents/Software";
+import Truck from "./truckComponets/Truck";
+import Career from "./careerComponets/Career";
+import Footer from "./screens/Footer";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="grid-container">
+      <div>
         <Navbar />
-        <main style={{ marginTop: "42px 0 0 0" }}>
+        <main style={{ minHeight: "320px" }}>
           <Route path="/seller/:id" component={SellerScreen}></Route>
           <Route path="/cart/:id?" component={CartScreen}></Route>
           <Route path="/product/:id" component={ProductScreen} exact></Route>
@@ -110,7 +110,7 @@ function App() {
           <Route path="/truck" component={Truck} exact></Route>{" "}
           <Route path="/career" component={Career} exact></Route>
         </main>
-       <Footer />
+        <Footer />
       </div>
     </BrowserRouter>
   );
