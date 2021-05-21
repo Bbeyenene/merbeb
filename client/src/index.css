@@ -29,7 +29,6 @@ body {
   /* width: 100vw; */
   padding: 0;
   /* border: 10px solid rgb(0, 14, 121); */
- 
 }
 header {
   grid-area: header;
@@ -41,7 +40,6 @@ header {
   display: flex;
   justify-content: space-between;
 }
-
 
 /* Common */
 h1 {
@@ -114,6 +112,7 @@ a.brand {
   padding: 0.2rem 0.7rem;
   font-size: 1.4rem;
   margin-left: 0.2rem;
+  border: 1px solid red
 }
 .row {
   display: flex;
@@ -251,8 +250,10 @@ img.large {
 }
 /* Form */
 .form {
+  display: block;
+  flex-direction: column;
   max-width: 60rem;
-  margin: 0 auto;
+  margin: 10px auto;
   margin-top: 1.5rem;
   border: 1px solid lightgrey;
   border-radius: 1rem;
@@ -372,7 +373,6 @@ img.large {
 .pagination a.active {
   font-weight: bold;
 }
-
 
 footer {
   display: flex;

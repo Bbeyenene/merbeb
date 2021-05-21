@@ -8,7 +8,6 @@ import { signout } from "../redux/actions/userActions";
 import { listProductCategories } from "../redux/actions/productActions";
 import "../mainComponents/main.css";
 
-
 function Navbar() {
   const cart = useSelector((state) => state.cart);
 
@@ -35,14 +34,13 @@ function Navbar() {
     <nav className="nav-container">
       <div style={{ width: "100vw" }}>
         <>
-          <header className="row">
+          <header className="main-header">
             <div>
               <button
                 type="button"
                 className="open-sidebar"
                 onClick={() => setSidebarIsOpen(true)}
               >
-                {" "}
                 <i className="fa fa-bars"></i>
               </button>
 
@@ -135,7 +133,7 @@ function Navbar() {
           <aside className={sidebarIsOpen ? "open" : ""}>
             <ul className="categories">
               <li>
-                <strong>Categories</strong>
+                <strong>Product Categories</strong>
                 <button
                   onClick={() => setSidebarIsOpen(false)}
                   className="close-sidebar"
@@ -165,15 +163,7 @@ function Navbar() {
         </>
       </div>
 
-      <div
-        className="nav-list"
-        // style={{
-        //   background: "#0e688f",
-        //   justifyContent: "space-around",
-        //   margin: "0 auto",
-        // }}
-        // className="row"
-      >
+      <div className="nav-list">
         <p>
           <Link to="/home">Digital Marketing</Link>
         </p>
@@ -184,7 +174,7 @@ function Navbar() {
           <Link to="/software">Software Services</Link>
         </p>
         <p>
-          <Link to="/truck">Truck Drivers</Link>
+          <Link to="/truck">Trucking solutions</Link>
         </p>
         <p>
           <Link to="/career">Career and Advertisements</Link>

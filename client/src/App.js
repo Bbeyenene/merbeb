@@ -25,16 +25,20 @@ import HomeH from "./mainComponents/Home";
 import Navbar from "./screens/Navbar";
 import ChatRoom from "./socialComponents/ChatRoom";
 import Software from "./softwareComponents/Software";
-import Truck from "./truckComponets/Truck";
+import Truck from "./truckComponents/Truck";
 import Career from "./careerComponets/Career";
 import Footer from "./screens/Footer";
+// import Chat from "./socialComponents/chatComponents/chat/Chat";
+import Join from "./socialComponents/chatComponents/Join/Join";
+import NavbarH from "./screens/NavbarH";
+// import ChatRoom from "./socialComponents/ChatRoom";
 
 function App() {
   return (
     <BrowserRouter>
       <div>
         <Navbar />
-        <main style={{ minHeight: "320px"}}>
+        <main style={{ minHeight: "320px" }}>
           <Route path="/seller/:id" component={SellerScreen}></Route>
           <Route path="/cart/:id?" component={CartScreen}></Route>
           <Route path="/product/:id" component={ProductScreen} exact></Route>
@@ -50,6 +54,8 @@ function App() {
           <Route path="/placeorder" component={PlaceOrderScreen}></Route>
           <Route path="/order/:id" component={OrderScreen}></Route>
           <Route path="/orderhistory" component={OrderHistoryScreen}></Route>
+          {/* <Route path="/chat" component={Chat}></Route> */}
+          <Route path="/join" component={Join}></Route>
           <Route
             path="/search/name/:name?"
             component={SearchScreen}
@@ -109,6 +115,7 @@ function App() {
           <Route path="/software" component={Software} exact></Route>{" "}
           <Route path="/truck" component={Truck} exact></Route>{" "}
           <Route path="/career" component={Career} exact></Route>
+          <Route path="/navbarh" component={NavbarH} exact></Route>
         </main>
         <Footer />
       </div>
