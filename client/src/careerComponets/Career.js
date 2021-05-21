@@ -10,8 +10,8 @@ function Career() {
           <div
             style={{
               border: "2px solid lightgrey",
-              width: "20%",
-              maxWidth: "200px",
+              width: "25%",
+              // maxWidth: "200px",
               backgroundColor: "rgb(242, 241, 241)",
             }}
           >
@@ -21,7 +21,7 @@ function Career() {
 
           <div
             style={{
-              width: "55%",
+              width: "70%",
               display: "flex",
               flexWrap: "wrap",
               justifyContent: "center",
@@ -531,7 +531,7 @@ function Career() {
             </Card>
           </div>
          
-          <div
+          {/* <div
             style={{
               border: "2px solid lightgrey",
               width: "24%",
@@ -540,7 +540,7 @@ function Career() {
             }}
           >
             <h1 style={{ textAlign: "center" }}>Right side</h1>
-          </div>
+          </div> */}
         
         </div>
       </div>

@@ -3,10 +3,23 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div style={{ margin: "0 auto", width: "100vw" }}>
+    <div
+      style={{
+        margin: "0 auto",
+        width: "100vw",
+        textAlign: "center",
+      }}
+    >
       <div className="hero">
         <h1> Subscribe Now </h1>
-        <p>
+        <h2
+          style={{
+            width: "50%",
+            margin: "0 auto",
+            fontSize: "26px",
+            color: "gold",
+          }}
+        >
           Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit
           amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip
           Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit
@@ -14,7 +27,7 @@ function Home() {
           Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit
           amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip
           Lorem ipsum dolor sit amet, consectetur adip
-        </p>
+        </h2>
       </div>
 
       <main className="main">
@@ -73,16 +86,10 @@ function Home() {
           </div>
           <div className="div-1">
             <h3>Software Services</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit
-              amet, consectetur adip Lorem ipsum dolor sit amet, consectetur
-              adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum
-              dolor sit amet, consectetur adip Lorem ipsum dolor sit amet,
-              consectetur adip Lorem ipsum dolor sit amet, consectetur adip
-              Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit
-              amet, consectetur adip Lorem ipsum dolor sit amet, consectetur
-              adip
-            </p>
+            <p>Web Design Services</p>
+            <p>Custom Built Services</p>
+            <p>SEO Services</p>
+            <p> Database Design</p>
             <br />
             <br />
             <Link to="/software"> Visit</Link>
