@@ -31,6 +31,11 @@ import Footer from "./screens/Footer";
 // import Chat from "./socialComponents/chatComponents/chat/Chat";
 import Join from "./socialComponents/chatComponents/Join/Join";
 import NavbarH from "./screens/NavbarH";
+import Report from "./truckComponents/Report";
+import History from "./truckComponents/History";
+import Pending from "./truckComponents/Pending";
+import TrackPaid from "./truckComponents/TrackPaid";
+
 // import ChatRoom from "./socialComponents/ChatRoom";
 
 function App() {
@@ -116,6 +121,10 @@ function App() {
           <Route path="/truck" component={Truck} exact></Route>{" "}
           <Route path="/career" component={Career} exact></Route>
           <Route path="/navbarh" component={NavbarH} exact></Route>
+          <Route path="/t-report" component={Report} exact></Route>
+          <Route path="/t-history" component={History} exact></Route>
+          <Route path="/t-pending" component={Pending} exact></Route>
+          <Route path="/t-paid" component={TrackPaid} exact></Route>
         </main>
         <Footer />
       </div>

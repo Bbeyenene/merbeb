@@ -6,18 +6,19 @@ function Career() {
     <>
       <div style={{ width: "100%" }}>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
-          
           <div
             style={{
               border: "2px solid lightgrey",
               width: "25%",
-              // maxWidth: "200px",
+              maxWidth: "250px",
               backgroundColor: "rgb(242, 241, 241)",
+              height: "100vh",
+              position: "sticky",
+              top: "210px",
             }}
           >
-            <h1 style={{ textAlign: "center" }}>Left side</h1>
+            <h1 style={{ textAlign: "center" }}>Left side bar</h1>
           </div>
-
 
           <div
             style={{
@@ -27,7 +28,6 @@ function Career() {
               justifyContent: "center",
             }}
           >
-            
             <Card
               style={{
                 width: "100%",
@@ -35,11 +35,8 @@ function Career() {
                 backgroundColor: "#ffffff",
                 color: "#000000",
                 fontSize: "2rem",
-                // padding: "3rem",
                 border: "none",
                 borderBottom: "1px solid grey",
-                // boxShadow:
-                //   "  3px 3px 3px 3px rgba(0, 0, 0, 0.1), -3px -3px 3px 3px rgba(0, 0, 0, 0.1)",
               }}
             >
               <Card.Body>
@@ -58,8 +55,33 @@ function Career() {
                     and make up the bulk of the card's content.Some quick
                   </p>
                 </Card.Text>
-                <Card.Link href="#">visit website</Card.Link>
-                <Card.Link href="#"></Card.Link>
+                <Card.Link href="/career">visit website</Card.Link>
+                <Card.Link href="/career"></Card.Link>
+              </Card.Body>
+            </Card>
+            <Card
+              style={{
+                width: "100%",
+                height: "auto",
+                backgroundColor: "#ffffff",
+                color: "#000000",
+                fontSize: "2rem",
+                padding: "3rem",
+                border: "none",
+                borderBottom: "1px solid grey",
+              }}
+            >
+              <Card.Body>
+                <Card.Title>Conservation</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">
+                  Park Reservation
+                </Card.Subtitle>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+                <Card.Link href="/career">visit website</Card.Link>
+                <Card.Link href="/career"></Card.Link>
               </Card.Body>
             </Card>
             <Card
@@ -88,6 +110,81 @@ function Career() {
                 <Card.Link href="#">visit website</Card.Link>
                 <Card.Link href="#"></Card.Link>
               </Card.Body>
+            </Card>{" "}
+            <Card
+              style={{
+                width: "100%",
+                height: "auto",
+                backgroundColor: "#ffffff",
+                color: "#000000",
+                fontSize: "2rem",
+                padding: "3rem",
+                border: "none",
+                borderBottom: "1px solid grey",
+              }}
+            >
+              <Card.Body>
+                <Card.Title>Conservation</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">
+                  Park Reservation
+                </Card.Subtitle>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+                <Card.Link href="/career">visit website</Card.Link>
+                <Card.Link href="career"></Card.Link>
+              </Card.Body>
+            </Card>{" "}
+            <Card
+              style={{
+                width: "100%",
+                height: "auto",
+                backgroundColor: "#ffffff",
+                color: "#000000",
+                fontSize: "2rem",
+                padding: "3rem",
+                border: "none",
+                borderBottom: "1px solid grey",
+              }}
+            >
+              <Card.Body>
+                <Card.Title>Conservation</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">
+                  Park Reservation
+                </Card.Subtitle>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+                <Card.Link href="/career">visit website</Card.Link>
+                <Card.Link href="career"></Card.Link>
+              </Card.Body>
+            </Card>{" "}
+            <Card
+              style={{
+                width: "100%",
+                height: "auto",
+                backgroundColor: "#ffffff",
+                color: "#000000",
+                fontSize: "2rem",
+                padding: "3rem",
+                border: "none",
+                borderBottom: "1px solid grey",
+              }}
+            >
+              <Card.Body>
+                <Card.Title>Conservation</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">
+                  Park Reservation
+                </Card.Subtitle>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+                <Card.Link href="/career">visit website</Card.Link>
+                <Card.Link href="career"></Card.Link>
+              </Card.Body>
             </Card>
             <Card
               style={{
@@ -99,8 +196,6 @@ function Career() {
                 padding: "3rem",
                 border: "none",
                 borderBottom: "1px solid grey",
-                // boxShadow:
-                //   "  3px 3px 3px 3px rgba(0, 0, 0, 0.1), -3px -3px 3px 3px rgba(0, 0, 0, 0.1)",
               }}
             >
               <Card.Body>
@@ -112,386 +207,8 @@ function Career() {
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </Card.Text>
-                <Card.Link href="#">visit website</Card.Link>
-                <Card.Link href="#"></Card.Link>
-              </Card.Body>
-            </Card>{" "}
-            <Card
-              style={{
-                width: "100%",
-                height: "auto",
-                backgroundColor: "#ffffff",
-                color: "#000000",
-                fontSize: "2rem",
-                padding: "3rem",
-                border: "none",
-                borderBottom: "1px solid grey",
-                // boxShadow:
-                //   "  3px 3px 3px 3px rgba(0, 0, 0, 0.1), -3px -3px 3px 3px rgba(0, 0, 0, 0.1)",
-              }}
-            >
-              <Card.Body>
-                <Card.Title>Conservation</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  Park Reservation
-                </Card.Subtitle>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Card.Link href="#">visit website</Card.Link>
-                <Card.Link href="#"></Card.Link>
-              </Card.Body>
-            </Card>{" "}
-            <Card
-              style={{
-                width: "100%",
-                height: "auto",
-                backgroundColor: "#ffffff",
-                color: "#000000",
-                fontSize: "2rem",
-                padding: "3rem",
-                border: "none",
-                borderBottom: "1px solid grey",
-                // boxShadow:
-                //   "  3px 3px 3px 3px rgba(0, 0, 0, 0.1), -3px -3px 3px 3px rgba(0, 0, 0, 0.1)",
-              }}
-            >
-              <Card.Body>
-                <Card.Title>Conservation</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  Park Reservation
-                </Card.Subtitle>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Card.Link href="#">visit website</Card.Link>
-                <Card.Link href="#"></Card.Link>
-              </Card.Body>
-            </Card>{" "}
-            <Card
-              style={{
-                width: "100%",
-                height: "auto",
-                backgroundColor: "#ffffff",
-                color: "#000000",
-                fontSize: "2rem",
-                padding: "3rem",
-                border: "none",
-                borderBottom: "1px solid grey",
-                // boxShadow:
-                //   "  3px 3px 3px 3px rgba(0, 0, 0, 0.1), -3px -3px 3px 3px rgba(0, 0, 0, 0.1)",
-              }}
-            >
-              <Card.Body>
-                <Card.Title>Conservation</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  Park Reservation
-                </Card.Subtitle>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Card.Link href="#">visit website</Card.Link>
-                <Card.Link href="#"></Card.Link>
-              </Card.Body>
-            </Card>{" "}
-            <Card
-              style={{
-                width: "100%",
-                height: "auto",
-                backgroundColor: "#ffffff",
-                color: "#000000",
-                fontSize: "2rem",
-                padding: "3rem",
-                border: "none",
-                borderBottom: "1px solid grey",
-                // boxShadow:
-                //   "  3px 3px 3px 3px rgba(0, 0, 0, 0.1), -3px -3px 3px 3px rgba(0, 0, 0, 0.1)",
-              }}
-            >
-              <Card.Body>
-                <Card.Title>Conservation</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  Park Reservation
-                </Card.Subtitle>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Card.Link href="#">visit website</Card.Link>
-                <Card.Link href="#"></Card.Link>
-              </Card.Body>
-            </Card>{" "}
-            <Card
-              style={{
-                width: "100%",
-                height: "auto",
-                backgroundColor: "#ffffff",
-                color: "#000000",
-                fontSize: "2rem",
-                padding: "3rem",
-                border: "none",
-                borderBottom: "1px solid grey",
-                // boxShadow:
-                //   "  3px 3px 3px 3px rgba(0, 0, 0, 0.1), -3px -3px 3px 3px rgba(0, 0, 0, 0.1)",
-              }}
-            >
-              <Card.Body>
-                <Card.Title>Conservation</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  Park Reservation
-                </Card.Subtitle>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Card.Link href="#">visit website</Card.Link>
-                <Card.Link href="#"></Card.Link>
-              </Card.Body>
-            </Card>{" "}
-            <Card
-              style={{
-                width: "100%",
-                height: "auto",
-                backgroundColor: "#ffffff",
-                color: "#000000",
-                fontSize: "2rem",
-                padding: "3rem",
-                border: "none",
-                borderBottom: "1px solid grey",
-                // boxShadow:
-                //   "  3px 3px 3px 3px rgba(0, 0, 0, 0.1), -3px -3px 3px 3px rgba(0, 0, 0, 0.1)",
-              }}
-            >
-              <Card.Body>
-                <Card.Title>Conservation</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  Park Reservation
-                </Card.Subtitle>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Card.Link href="#">visit website</Card.Link>
-                <Card.Link href="#"></Card.Link>
-              </Card.Body>
-            </Card>{" "}
-            <Card
-              style={{
-                width: "100%",
-                height: "auto",
-                backgroundColor: "#ffffff",
-                color: "#000000",
-                fontSize: "2rem",
-                padding: "3rem",
-                border: "none",
-                borderBottom: "1px solid grey",
-                // boxShadow:
-                //   "  3px 3px 3px 3px rgba(0, 0, 0, 0.1), -3px -3px 3px 3px rgba(0, 0, 0, 0.1)",
-              }}
-            >
-              <Card.Body>
-                <Card.Title>Conservation</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  Park Reservation
-                </Card.Subtitle>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Card.Link href="#">visit website</Card.Link>
-                <Card.Link href="#"></Card.Link>
-              </Card.Body>
-            </Card>{" "}
-            <Card
-              style={{
-                width: "100%",
-                height: "auto",
-                backgroundColor: "#ffffff",
-                color: "#000000",
-                fontSize: "2rem",
-                padding: "3rem",
-                border: "none",
-                borderBottom: "1px solid grey",
-                // boxShadow:
-                //   "  3px 3px 3px 3px rgba(0, 0, 0, 0.1), -3px -3px 3px 3px rgba(0, 0, 0, 0.1)",
-              }}
-            >
-              <Card.Body>
-                <Card.Title>Conservation</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  Park Reservation
-                </Card.Subtitle>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Card.Link href="#">visit website</Card.Link>
-                <Card.Link href="#"></Card.Link>
-              </Card.Body>
-            </Card>{" "}
-            <Card
-              style={{
-                width: "100%",
-                height: "auto",
-                backgroundColor: "#ffffff",
-                color: "#000000",
-                fontSize: "2rem",
-                padding: "3rem",
-                border: "none",
-                borderBottom: "1px solid grey",
-                // boxShadow:
-                //   "  3px 3px 3px 3px rgba(0, 0, 0, 0.1), -3px -3px 3px 3px rgba(0, 0, 0, 0.1)",
-              }}
-            >
-              <Card.Body>
-                <Card.Title>Conservation</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  Park Reservation
-                </Card.Subtitle>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Card.Link href="#">visit website</Card.Link>
-                <Card.Link href="#"></Card.Link>
-              </Card.Body>
-            </Card>{" "}
-            <Card
-              style={{
-                width: "100%",
-                height: "auto",
-                backgroundColor: "#ffffff",
-                color: "#000000",
-                fontSize: "2rem",
-                padding: "3rem",
-                border: "none",
-                borderBottom: "1px solid grey",
-                // boxShadow:
-                //   "  3px 3px 3px 3px rgba(0, 0, 0, 0.1), -3px -3px 3px 3px rgba(0, 0, 0, 0.1)",
-              }}
-            >
-              <Card.Body>
-                <Card.Title>Conservation</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  Park Reservation
-                </Card.Subtitle>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Card.Link href="#">visit website</Card.Link>
-                <Card.Link href="#"></Card.Link>
-              </Card.Body>
-            </Card>{" "}
-            <Card
-              style={{
-                width: "100%",
-                height: "auto",
-                backgroundColor: "#ffffff",
-                color: "#000000",
-                fontSize: "2rem",
-                padding: "3rem",
-                border: "none",
-                borderBottom: "1px solid grey",
-                // boxShadow:
-                //   "  3px 3px 3px 3px rgba(0, 0, 0, 0.1), -3px -3px 3px 3px rgba(0, 0, 0, 0.1)",
-              }}
-            >
-              <Card.Body>
-                <Card.Title>Conservation</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  Park Reservation
-                </Card.Subtitle>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Card.Link href="#">visit website</Card.Link>
-                <Card.Link href="#"></Card.Link>
-              </Card.Body>
-            </Card>{" "}
-            <Card
-              style={{
-                width: "100%",
-                height: "auto",
-                backgroundColor: "#ffffff",
-                color: "#000000",
-                fontSize: "2rem",
-                padding: "3rem",
-                border: "none",
-                borderBottom: "1px solid grey",
-                // boxShadow:
-                //   "  3px 3px 3px 3px rgba(0, 0, 0, 0.1), -3px -3px 3px 3px rgba(0, 0, 0, 0.1)",
-              }}
-            >
-              <Card.Body>
-                <Card.Title>Conservation</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  Park Reservation
-                </Card.Subtitle>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Card.Link href="#">visit website</Card.Link>
-                <Card.Link href="#"></Card.Link>
-              </Card.Body>
-            </Card>{" "}
-            <Card
-              style={{
-                width: "100%",
-                height: "auto",
-                backgroundColor: "#ffffff",
-                color: "#000000",
-                fontSize: "2rem",
-                padding: "3rem",
-                border: "none",
-                borderBottom: "1px solid grey",
-                // boxShadow:
-                //   "  3px 3px 3px 3px rgba(0, 0, 0, 0.1), -3px -3px 3px 3px rgba(0, 0, 0, 0.1)",
-              }}
-            >
-              <Card.Body>
-                <Card.Title>Conservation</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  Park Reservation
-                </Card.Subtitle>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Card.Link href="#">visit website</Card.Link>
-                <Card.Link href="#"></Card.Link>
-              </Card.Body>
-            </Card>{" "}
-            <Card
-              style={{
-                width: "100%",
-                height: "auto",
-                backgroundColor: "#ffffff",
-                color: "#000000",
-                fontSize: "2rem",
-                padding: "3rem",
-                border: "none",
-                borderBottom: "1px solid grey",
-                // boxShadow:
-                //   "  3px 3px 3px 3px rgba(0, 0, 0, 0.1), -3px -3px 3px 3px rgba(0, 0, 0, 0.1)",
-              }}
-            >
-              <Card.Body>
-                <Card.Title>Conservation</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  Park Reservation
-                </Card.Subtitle>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Card.Link href="#">visit website</Card.Link>
-                <Card.Link href="#"></Card.Link>
+                <Card.Link href="/career">visit website</Card.Link>
+                <Card.Link href="career"></Card.Link>
               </Card.Body>
             </Card>
             <Card style={{ width: "38rem" }}>
@@ -501,6 +218,7 @@ function Career() {
                 width="100%"
                 height="180px"
               />
+
               <Card.Body>
                 <Card.Title>Conservation Park</Card.Title>
                 <Card.Text>
@@ -516,6 +234,7 @@ function Career() {
                   of the card's content.
                 </Card.Text>
               </Card.Body>
+
               <ListGroup className="list-group-flush">
                 <ListGroupItem>Cras justo odio</ListGroupItem>
                 <br />
@@ -530,7 +249,7 @@ function Career() {
               </Card.Body>
             </Card>
           </div>
-         
+
           {/* <div
             style={{
               border: "2px solid lightgrey",
@@ -541,7 +260,6 @@ function Career() {
           >
             <h1 style={{ textAlign: "center" }}>Right side</h1>
           </div> */}
-        
         </div>
       </div>
     </>
