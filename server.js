@@ -36,6 +36,8 @@ mongoose.connect(
     console.log("mongodb connected");
   }
 );
+
+
 app.use("/api/products", product);
 app.use("/api/users", user);
 app.use("/api/orders", order);
@@ -48,10 +50,13 @@ app.get("/api/config/google", (req, res) => {
   res.send(process.env.GOOGLE_API_KEY || "");
 });
 app.use("/uploads", express.static(path.join(path.resolve(), "/uploads")));
+
 app.use(express.static(path.join(path.resolve(), "client/build")));
+
 app.get("*", (req, res) =>
   res.sendFile(path.join(path.resolve(), "client/build/index.html"))
 );
+
 app.get("/", (req, res) => {
   res.send("Server is ready");
 });
@@ -109,6 +114,4 @@ io.on("connect", (socket) => {
 });
 
 const port = process.env.PORT || 5000;
-app.listen(port, () => {
-  console.log(`Serve at http://localhost:${port}`);
-});
+app.listen(port, () => console.log(`Serve at http://localhost:${port}`));

@@ -1,4 +1,14 @@
 import React from "react";
+//AiFillFacebook;
+import {
+  FaFacebook,
+  FaTwitterSquare,
+  FaLinkedin,
+  FaPhoneVolume,
+} from "react-icons/fa";
+import { BsFillEnvelopeFill } from "react-icons/bs";
+import { AiFillMessage } from "react-icons/ai";
+
 
 function Footer() {
   return (
@@ -12,51 +22,16 @@ function Footer() {
         }}
       >
         <div>
-          <h4>Contact</h4>
-          <p>Message</p>
+          <h3>Contact</h3>
 
-          <p>Email: manager@merbeb.com</p>
-          <p>Phone: 7084272105</p>
-          {/* <div className="mb-3" style={{ display: "" }}>
-            <label for="exampleFormControlInput1" className="form-label">
-              Email address
-            </label>
-            <br />
-            <input
-              type="email"
-              className="form-control"
-              id="exampleFormControlInput1"
-              placeholder="name@example.com"
-            />
-          </div>
-          <div className="mb-3">
-            <label for="exampleFormControlInput1" className="form-label">
-              Title
-            </label>
-            <br />
-            <input
-              type="email"
-              className="form-control"
-              id="exampleFormControlInput1"
-              placeholder="name@example.com"
-            />
+          <p><AiFillMessage />Message</p>
 
-            <br />
-            <div className="mb-3">
-              <label for="exampleFormControlTextarea1" className="form-label">
-                Message
-              </label>
-              <br />
-
-              <textarea
-                className="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-              ></textarea>
-            </div>
-            <button>Click</button>
-          </div>
-         */}
+          <p>
+            <BsFillEnvelopeFill /> manager@merbeb.com
+          </p>
+          <p>
+            <FaPhoneVolume /> 7084272105
+          </p>
         </div>
       </div>
 
@@ -64,10 +39,16 @@ function Footer() {
         <div style={{ width: "70%", float: "right" }}>
           <h4> Follow Us</h4>
 
-          <p>@ Face book</p>
-          <p>@ Tweeter</p>
-          <p>@ LinkdIn</p>
-          
+          <p>
+            <FaFacebook /> Face book
+          </p>
+          <p>
+            <FaTwitterSquare />
+            Twitter
+          </p>
+          <p>
+            <FaLinkedin /> LinkdIn
+          </p>
         </div>
       </div>
     </footer>
