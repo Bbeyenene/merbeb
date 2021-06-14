@@ -34,6 +34,7 @@ export const register = (name, email, password) => async (dispatch) => {
       email,
       password,
     });
+    
     dispatch({ type: USER_REGISTER_SUCCESS, payload: data });
     dispatch({ type: USER_SIGNIN_SUCCESS, payload: data });
     localStorage.setItem('userInfo', JSON.stringify(data));

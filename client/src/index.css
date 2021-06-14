@@ -112,7 +112,7 @@ a.brand {
   padding: 0.2rem 0.7rem;
   font-size: 1.4rem;
   margin-left: 0.2rem;
-  border: 1px solid red
+  border: 1px solid red;
 }
 .row {
   display: flex;
@@ -147,10 +147,10 @@ a.brand {
 /* Aside */
 aside {
   position: fixed;
-  width: 30rem;
+  width: 28rem;
   height: 100%;
   background-color: #efefef;
-  z-index: 1000;
+  z-index: 0;
   transform: translateX(-30rem);
   transition: all 0.5s;
 }
@@ -385,5 +385,5 @@ footer {
   position: relative;
   bottom: 0;
   padding: 2rem;
-  
+  z-index: 1000;
 }

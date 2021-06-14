@@ -7,11 +7,14 @@ import SearchBox from "../components/SearchBox";
 import { signout } from "../redux/actions/userActions";
 import { listProductCategories } from "../redux/actions/productActions";
 import "../mainComponents/main.css";
-
+import { BsArrowsExpand, BsArrowsCollapse } from "react-icons/bs";
 function Navbar() {
   const cart = useSelector((state) => state.cart);
 
   const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
+  const [navOpen, setNavOpen] = useState(false);
+  const [colapseNave, setColapseNave] = useState(false);
+
   const { cartItems } = cart;
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo } = userSignin;
@@ -36,35 +39,26 @@ function Navbar() {
         <>
           <header className="main-header">
             <div>
-              <button
-                type="button"
-                className="open-sidebar"
-                onClick={() => setSidebarIsOpen(true)}
-              >
-                <i className="fa fa-bars"></i>
-              </button>
-
               <Link className="brand" to="/">
                 Merbeb Solutions
               </Link>
             </div>
-            <div>
-              <Route
-                render={({ history }) => (
-                  <SearchBox history={history}></SearchBox>
-                )}
-              ></Route>
-            </div>
-            <div
-              style={{
-                flex: 0.25,
-                padding: "1rem",
-                display: "flex",
-                justifyContent: "space-around",
-                fontSize: "1.7rem",
-              }}
-            >
-              <Link to="/cart">
+            <div className="main-nav-list">
+              <div>
+                <Route
+                  render={({ history }) => (
+                    <SearchBox history={history}></SearchBox>
+                  )}
+                ></Route>
+              </div>
+
+              <Link
+                to="/cart"
+                style={{
+                  fontSize: "25px",
+                  alignSelf: "center",
+                }}
+              >
                 Cart
                 {cartItems.length > 0 && (
                   <span className="badge">{cartItems.length}</span>
@@ -77,21 +71,37 @@ function Navbar() {
                   </Link>
                   <ul className="dropdown-content">
                     <li>
-                      <Link to="/profile">User Profile</Link>
+                      <Link to="/profile">Profile</Link>
                     </li>
                     <li>
-                      <Link to="/orderhistory">Order History</Link>
+                      <Link to="/orderhistory">Orders</Link>
                     </li>
                     <li>
                       <Link to="#signout" onClick={signoutHandler}>
-                        Sign Out
+                        Logout
                       </Link>
                     </li>
                   </ul>
                 </div>
               ) : (
-                <Link to="/signin">Sign In</Link>
+                <Link
+                  to="/signin"
+                  style={{ fontSize: "25px", alignSelf: "center" }}
+                >
+                  Login
+                </Link>
               )}
+              <button
+                type="button"
+                className="open-sidebar"
+                style={{ fontSize: "25px", alignSelf: "center" }}
+                onClick={() => {
+                  setNavOpen(!navOpen);
+                  setColapseNave(!colapseNave);
+                }}
+              >
+                {colapseNave ? <BsArrowsCollapse /> : <BsArrowsExpand />}
+              </button>
               {userInfo && userInfo.isSeller && (
                 <div className="dropdown">
                   <Link to="#admin">
@@ -163,8 +173,15 @@ function Navbar() {
         </>
       </div>
 
-      <div className="nav-list">
+      <div className={navOpen ? "nav-list" : "nav-list-close"}>
         <p>
+          <button
+            type="button"
+            className="open-sidebar"
+            onClick={() => setSidebarIsOpen(true)}
+          >
+            <i className="fa fa-bars"></i>
+          </button>
           <Link to="/home">Digital Marketing</Link>
         </p>
         <p>

@@ -1,11 +1,12 @@
 function ChatRoom() {
   return (
     <>
-      <form action="/action_page.php">
+      {/* <form action="/action_page.php">
         <input type="file" />
         <br />
         <input type="submit" />
-      </form>
+      </form> */}
+      <h1>Chat Room</h1>
     </>
   );
 }

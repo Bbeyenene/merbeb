@@ -10,25 +10,7 @@ function Home() {
         textAlign: "center",
       }}
     >
-      <div className="hero">
-        <h1> Subscribe Now </h1>
-        <h2
-          style={{
-            width: "50%",
-            margin: "0 auto",
-            fontSize: "26px",
-            color: "gold",
-          }}
-        >
-          Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit
-          amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip
-          Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit
-          amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip
-          Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit
-          amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip
-          Lorem ipsum dolor sit amet, consectetur adip
-        </h2>
-      </div>
+      <div className="hero"></div>
 
       <main className="main">
         <section>

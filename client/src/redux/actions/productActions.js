@@ -23,28 +23,31 @@ import {
   PRODUCT_REVIEW_CREATE_FAIL,
 } from "../constants/productConstants";
 
-export const listProducts = ({
-  pageNumber = "",
-  seller = "",
-  name = "",
-  category = "",
-  order = "",
-  min = 0,
-  max = 0,
-  rating = 0,
-}) => async (dispatch) => {
-  dispatch({
-    type: PRODUCT_LIST_REQUEST,
-  });
-  try {
-    const { data } = await Axios.get(
-      `/api/products?pageNumber=${pageNumber}&seller=${seller}&name=${name}&category=${category}&min=${min}&max=${max}&rating=${rating}&order=${order}`
-    );
-    dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
-  } catch (error) {
-    dispatch({ type: PRODUCT_LIST_FAIL, payload: error.message });
-  }
-};
+export const listProducts =
+  ({
+    pageNumber = "",
+    seller = "",
+    name = "",
+    category = "",
+    order = "",
+    min = 0,
+    max = 0,
+    rating = 0,
+  }) =>
+  async (dispatch) => {
+    //dispatch search
+    dispatch({ type: PRODUCT_LIST_REQUEST });
+    try {
+      const { data } = await Axios.get(
+        `/api/products?pageNumber=${pageNumber}&seller=${seller}&name=${name}&category=${category}&min=${min}&max=${max}&rating=${rating}&order=${order}`
+      );
+      //dispatch success
+      dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
+    } catch (error) {
+      //dispatch fail error
+      dispatch({ type: PRODUCT_LIST_FAIL, payload: error.message });
+    }
+  };
 
 export const listProductCategories = () => async (dispatch) => {
   dispatch({
@@ -52,9 +55,15 @@ export const listProductCategories = () => async (dispatch) => {
   });
   try {
     const { data } = await Axios.get(`/api/products/categories`);
-    dispatch({ type: PRODUCT_CATEGORY_LIST_SUCCESS, payload: data });
+    dispatch({
+      type: PRODUCT_CATEGORY_LIST_SUCCESS,
+      payload: data,
+    });
   } catch (error) {
-    dispatch({ type: PRODUCT_CATEGORY_LIST_FAIL, payload: error.message });
+    dispatch({
+      type: PRODUCT_CATEGORY_LIST_FAIL,
+      payload: error.message,
+    });
   }
 };
 
@@ -134,31 +143,29 @@ export const deleteProduct = (productId) => async (dispatch, getState) => {
     dispatch({ type: PRODUCT_DELETE_FAIL, payload: message });
   }
 };
-export const createReview = (productId, review) => async (
-  dispatch,
-  getState
-) => {
-  dispatch({ type: PRODUCT_REVIEW_CREATE_REQUEST });
-  const {
-    userSignin: { userInfo },
-  } = getState();
-  try {
-    const { data } = await Axios.post(
-      `/api/products/${productId}/reviews`,
-      review,
-      {
-        headers: { Authorization: `Bearer ${userInfo.token}` },
-      }
-    );
-    dispatch({
-      type: PRODUCT_REVIEW_CREATE_SUCCESS,
-      payload: data.review,
-    });
-  } catch (error) {
-    const message =
-      error.response && error.response.data.message
-        ? error.response.data.message
-        : error.message;
-    dispatch({ type: PRODUCT_REVIEW_CREATE_FAIL, payload: message });
-  }
-};
+export const createReview =
+  (productId, review) => async (dispatch, getState) => {
+    dispatch({ type: PRODUCT_REVIEW_CREATE_REQUEST });
+    const {
+      userSignin: { userInfo },
+    } = getState();
+    try {
+      const { data } = await Axios.post(
+        `/api/products/${productId}/reviews`,
+        review,
+        {
+          headers: { Authorization: `Bearer ${userInfo.token}` },
+        }
+      );
+      dispatch({
+        type: PRODUCT_REVIEW_CREATE_SUCCESS,
+        payload: data.review,
+      });
+    } catch (error) {
+      const message =
+        error.response && error.response.data.message
+          ? error.response.data.message
+          : error.message;
+      dispatch({ type: PRODUCT_REVIEW_CREATE_FAIL, payload: message });
+    }
+  };

@@ -12,9 +12,9 @@ function Career() {
               width: "25%",
               maxWidth: "250px",
               backgroundColor: "rgb(242, 241, 241)",
-              height: "100vh",
+              // height: "100vh",
               position: "sticky",
-              top: "210px",
+              // top: "160px",
             }}
           >
             <h1 style={{ textAlign: "center" }}>Left side bar</h1>

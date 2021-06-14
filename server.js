@@ -46,9 +46,11 @@ app.use("/api/uploads", upload);
 app.get("/api/config/paypal", (req, res) => {
   res.send(process.env.PAYPAL_CLIENT_ID || "sb");
 });
+
 app.get("/api/config/google", (req, res) => {
   res.send(process.env.GOOGLE_API_KEY || "");
 });
+
 app.use("/uploads", express.static(path.join(path.resolve(), "/uploads")));
 
 app.use(express.static(path.join(path.resolve(), "client/build")));
@@ -65,6 +67,7 @@ app.get("/", (req, res) => {
 app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message });
 });
+
 io.on("connect", (socket) => {
   socket.on("join", ({ name, room }, callback) => {
     const { error, user } = addUser({ id: socket.id, name, room });

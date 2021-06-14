@@ -29,7 +29,7 @@ import {
   userUpdateProfileReducer,
   userUpdateReducer,
 } from "./userReducers";
-
+//combine all the branches of the states into a single state
 export const rootReducer = combineReducers({
   productList: productListReducer,
   productDetails: productDetailsReducer,

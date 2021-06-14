@@ -5,11 +5,10 @@
   display: flex;
   flex-wrap: wrap;
   background-color: #0e688f;
-  /* position: sticky; */
   width: 100%;
   min-width: 320px;
   position: sticky;
-  top: -225px;
+  top: 0;
   z-index: 100;
 }
 h2 {
@@ -29,10 +28,10 @@ h2 {
   padding-top: 0;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 200px;
+  min-height: 100px;
+  box-shadow: 5px 5px 5px rgb(59, 59, 60);
 }
 .nav-container h4 {
   max-width: 430px;
@@ -42,6 +41,13 @@ h2 {
   margin: 0 auto;
   margin-left: 30px;
   color: #ffffff;
+}
+.main-nav-list {
+  /* border: 1px solid red; */
+  width: 50%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
 }
 .nav-list {
   width: 100%;
@@ -54,9 +60,17 @@ h2 {
   font-family: "Dancing Script", cursive;
   font-family: "Oswald", sans-serif;
   font-family: "Patua One", cursive;
+  /* padding-top: -20px; */
+  margin-top: 10px;
+}
+.nav-list-close {
+  display: none;
 }
 .nav-list p {
   align-self: center;
+  margin: 0px 0px 10px 0px;
+  border-left: 3px solid white;
+  padding-left: 1rem;
 }
 
 .nav-list {
@@ -89,10 +103,12 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
+
 .left {
   width: 20%;
   background-color: #b8ecf0;
 }
+
 .main {
   width: 100vw;
   margin: 0 auto;
@@ -126,4 +142,12 @@ h2 {
 div-2 img {
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 868px) {
+  .main-nav-list {
+    /* border: 10px solid red; */
+    display: flex;
+    flex-direction: column
+  }
 }
