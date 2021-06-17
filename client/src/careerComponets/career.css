@@ -1,0 +1,50 @@
+.career-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.career-aside {
+  border: 2px solid lightgrey;
+  width: 25%;
+  max-width: 250px;
+  background-color: rgb(242, 241, 241);
+  /* height: 100vh; */
+  position: sticky;
+  /* top: 60px; */
+}
+
+.career-aside h1 {
+  text-align: center;
+  color: red;
+}
+
+.career-main {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.career-card-1 {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 2rem;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+.career-card-2 {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 2rem;
+  padding: 3rem;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+
